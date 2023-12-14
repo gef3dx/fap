@@ -1,9 +1,8 @@
 from fastapi import FastAPI
-from pydantic import BaseModel, EmailStr
 
 import uvicorn
 from items_views import item_router
-from users.views import  router_user
+from users.views import router_user
 
 app = FastAPI()
 app.include_router(item_router)
@@ -27,5 +26,3 @@ def hello(name: str = "Hello"):
 
 if __name__ == '__main__':
     uvicorn.run("main:app", reload=True)
-
-
