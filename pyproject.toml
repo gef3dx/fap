@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fastapi template"
+version = "0.1.0"
+description = "FastAPI project tempate"
+authors = ["gef3dx <gef3dx@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.105.0"
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
+pydantic = {extras = ["email"], version = "^2.5.2"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
