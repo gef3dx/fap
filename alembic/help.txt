@@ -1,3 +1,5 @@
-alembic revision --autogenerate -m "migrate 1" #Создать минрацию
+alembic revision --autogenerate -m "migrate 1" #Создать миграцию
 alembic upgrade head #Применение миграции
 alembic downgrade -1 #Откат назад
+alembic history #История миграций
+alembic current #На какой мы миграций

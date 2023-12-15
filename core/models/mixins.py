@@ -8,7 +8,7 @@ if TYPE_CHECKING:
 
 
 class UserRelationMixin:
-    _user_id_nullable: bool =False
+    _user_id_nullable: bool = False
     _user_id_unique: bool = False
     _user_back_populates: str | None = None
 

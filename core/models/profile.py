@@ -1,8 +1,7 @@
 from sqlalchemy import String
-from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy.orm import Mapped, mapped_column
 from core.models.base import Base
 from .mixins import UserRelationMixin
-
 
 
 class Profile(UserRelationMixin, Base):
@@ -11,5 +10,4 @@ class Profile(UserRelationMixin, Base):
     first_name: Mapped[str | None] = mapped_column(String(40))
     last_name: Mapped[str | None] = mapped_column(String(40))
     bio: Mapped[str | None]
-
 
